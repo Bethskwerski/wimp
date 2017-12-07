@@ -13,7 +13,7 @@ public class Movie {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private Long id;
 	
 	@Column(length = 300, nullable = false)
 	private String title;
@@ -37,11 +37,11 @@ public class Movie {
 		this.distributor = distributor;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

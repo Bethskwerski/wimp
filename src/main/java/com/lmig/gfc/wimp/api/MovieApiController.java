@@ -42,7 +42,7 @@ public class MovieApiController {
 	}
 
 	@PutMapping("{id}")
-	public Movie update(@RequestBody Movie movie, @PathVariable int id) {
+	public Movie update(@RequestBody Movie movie, @PathVariable Long id) {
 		movie.setId(id);
 		return movieRepo.save(movie);
 	}

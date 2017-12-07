@@ -42,7 +42,7 @@ public class ActorApiController {
 	}
 
 	@PutMapping("{id}")
-	public Actor update(@RequestBody Actor actor, @PathVariable int id) {
+	public Actor update(@RequestBody Actor actor, @PathVariable Long id) {
 		actor.setId(id);
 		return actorRepo.save(actor);
 
